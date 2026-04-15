@@ -1,9 +1,18 @@
 def mostrar_cabecalho():
    print("=======")
-def registrar_saudacao(nome, estagio)
+def registrar_saudacao(nome, estagio):
    print(F"bem vindo, {nome}.Status de progreção em {estagio}%.")
 registrar_saudacao("Arthur", 30)
 registrar_saudacao("Beatriz", 70)
 mostrar_cabecalho()
 print ("bem vindo ao sistema de matricula")
 mostrar_cabecalho()
+def somar_comissao(balanco_atual, fator_bonus):
+   novo_balanco = balanco_atual + fator_bonus
+   return novo_balanco
+
+saldo_vendedor = 1200.00
+print("Fechando nova venda no sistema")
+
+saldo_vendedor = somar_comissao(saldo_vendedor, 150.00)
+print(F"O saldo corrigido é de R$:{saldo_vendedor: .2F}")
