@@ -1,0 +1,21 @@
+def calcular_estatistica(conjunto_notas):
+    soma = 0
+    for n in conjunto_notas:
+        soma += n
+    return soma / len(conjunto_notas)
+
+def verificar_aprovacao(nome_candidato, media):
+    if media >= 70:
+        print(nome_candidato, "- Aprovado")
+    else:
+        print(nome_candidato, "- Reprovado")
+
+nome = input("Nome do candidato: ")
+lista_notas = []
+
+for i in range(3):
+    valor = float(input(f"Digite a nota {i+1}: "))
+    lista_notas.append(valor)
+
+resultado_media = calcular_estatistica(lista_notas)
+verificar_aprovacao(nome, resultado_media)
